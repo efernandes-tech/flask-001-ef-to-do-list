@@ -41,7 +41,7 @@ curl http://127.0.0.1:5000/api/users
 ```
 
 ```cmd
-
+curl http://127.0.0.1:5000/api/users/1
 ```
 
 ```cmd
