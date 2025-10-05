@@ -2,6 +2,7 @@
 
 ```cmd
 cd ./backend
+python hello/app.py
 ```
 
 ```cmd
