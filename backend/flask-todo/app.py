@@ -32,5 +32,18 @@ def create_todo():
 
     return jsonify(todo), 201
 
+@app.route('/todos', methods=['GET'])
+def get_todos():
+    return jsonify(todos)
+
+@app.route('/todos/<int:todo_id>', methods=['GET'])
+def get_todo(todo_id):
+    todo = next((t for t in todos if t['id'] == todo_id), None)
+
+    if todo is None:
+        return jsonify({"error": "To-do not found"}), 404
+
+    return jsonify(todo)
+
 if __name__ == '__main__':
     app.run(debug=True)
