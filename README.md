@@ -82,15 +82,17 @@ python app.py
 ### API Endpoints
 
 **To-Do Items:**
-- `POST /api/todos` - Create a new to-do
-- `GET /api/todos` - Get all to-dos
-- `GET /api/todos/<id>` - Get a specific to-do
-- `PUT /api/todos/<id>` - Update a to-do
-- `DELETE /api/todos/<id>` - Delete a to-do
+
+-   `POST /api/todos` - Create a new to-do
+-   `GET /api/todos` - Get all to-dos
+-   `GET /api/todos/<id>` - Get a specific to-do
+-   `PUT /api/todos/<id>` - Update a to-do
+-   `DELETE /api/todos/<id>` - Delete a to-do
 
 **Users:**
-- `GET /api/users` - Get all users
-- `GET /api/users/<id>` - Get a specific user
+
+-   `GET /api/users` - Get all users
+-   `GET /api/users/<id>` - Get a specific user
 
 ---
 
@@ -112,9 +114,9 @@ python app.py
 ## Author
 
 <a href="https://github.com/efernandes-tech">
-    <img style="border-radius: 50%;" src="https://github.com/efernandes-tech.png" width="100px;" alt="Your Name" />
+    <img style="border-radius: 50%;" src="https://github.com/efernandes-tech.png" width="100px;" alt="Éderson Fernandes" />
     <br />
-    <sub><b>Your Name</b></sub>
+    <sub><b>Éderson Fernandes</b></sub>
 </a>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/efernandes-tech)
