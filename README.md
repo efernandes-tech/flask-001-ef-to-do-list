@@ -1,9 +1,9 @@
 <h1 align="center">
-    <a href="#" alt="Project Name">Project Name</a>
+    <a href="#" alt="Flask To-Do List API">Flask To-Do List API</a>
 </h1>
 
 <h3 align="center">
-    Brief description of your project
+    A RESTful API for managing to-do items and users built with Flask
 </h3>
 
 <p align="center">
@@ -31,15 +31,17 @@
 
 ## About
 
-Description about your project and what it does.
+A Flask-based RESTful API for managing to-do items and users. This project demonstrates building a complete CRUD API with Flask using blueprints for modular organization.
 
 ---
 
 ## Features
 
--   [x] Feature One
--   [x] Feature Two
--   [ ] Feature Three (in progress)
+-   [x] Create, read, update, and delete to-do items
+-   [x] User management API endpoints
+-   [x] RESTful API design with JSON responses
+-   [x] Modular architecture using Flask Blueprints
+-   [x] Error handling with custom error handlers
 
 ---
 
@@ -48,7 +50,7 @@ Description about your project and what it does.
 ### Pre-requisites
 
 Before you begin, you will need to have the following tools installed:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
+[Git](https://git-scm.com), [Python 3.x](https://www.python.org/)
 
 #### Running the project
 
@@ -57,37 +59,53 @@ Before you begin, you will need to have the following tools installed:
 git clone https://github.com/efernandes-tech/flask-001-ef-to-do-list.git
 
 # Access the project folder
-cd flask-001-ef-to-do-list
+cd flask-001-ef-to-do-list/backend/flask-todo
+
+# Create a virtual environment
+python -m venv venv
+
+# Activate the virtual environment
+# On Windows:
+source venv/Scripts/activate
+# On macOS/Linux:
+# source venv/bin/activate
 
 # Install dependencies
-npm install
+pip install Flask
 
 # Run the application
-npm start
+python app.py
 
-# The server will start at port: 3000 - go to http://localhost:3000
+# The server will start at port: 5000 - go to http://localhost:5000
 ```
+
+### API Endpoints
+
+**To-Do Items:**
+- `POST /api/todos` - Create a new to-do
+- `GET /api/todos` - Get all to-dos
+- `GET /api/todos/<id>` - Get a specific to-do
+- `PUT /api/todos/<id>` - Update a to-do
+- `DELETE /api/todos/<id>` - Delete a to-do
+
+**Users:**
+- `GET /api/users` - Get all users
+- `GET /api/users/<id>` - Get a specific user
 
 ---
 
 ## Tech Stack
 
-**Frontend:**
-
--   [React](https://reactjs.org/)
--   [TypeScript](https://www.typescriptlang.org/)
--   [Tailwind CSS](https://tailwindcss.com/)
-
 **Backend:**
 
--   [Node.js](https://nodejs.org/)
--   [Express](https://expressjs.com/)
--   [MongoDB](https://www.mongodb.com/)
+-   [Python](https://www.python.org/)
+-   [Flask](https://flask.palletsprojects.com/)
+-   In-memory storage (for demonstration purposes)
 
 **Tools:**
 
 -   [Visual Studio Code](https://code.visualstudio.com/)
--   [Postman](https://www.postman.com/)
+-   [Postman](https://www.postman.com/) or [curl](https://curl.se/) for API testing
 
 ---
 
